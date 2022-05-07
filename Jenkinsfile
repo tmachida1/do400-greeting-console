@@ -25,7 +25,7 @@ pipeline{
 stage('Release') {
     steps {
         sh '''
-            oc project goojzd--greetings
+            oc project goojzd-greetings
             oc start-build greeting-console  --follow --wait
         '''
     }
